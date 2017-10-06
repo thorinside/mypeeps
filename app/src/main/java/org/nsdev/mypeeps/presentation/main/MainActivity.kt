@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity(), Contract.View {
         AndroidInjection.inject(this)
 
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         presenter.attach(this)
